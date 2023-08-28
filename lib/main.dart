@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:portfolio/responsive/responsive_layout.dart';
 
-import 'responsive/desktop/pages/desktop_home_page/desktop_home_page.dart';
+import 'responsive/desktop/desktop_home_page.dart';
 
 void main() {
   runApp(const MyApp());
