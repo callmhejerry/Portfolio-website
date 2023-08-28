@@ -11,7 +11,7 @@ class Header extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      height: MediaQuery.of(context).size.height,
+      // height: MediaQuery.of(context).size.height,
       width: MediaQuery.of(context).size.width,
       color: const Color(0xff080808),
       child: Column(
@@ -41,6 +41,7 @@ class Header extends StatelessWidget {
               ],
             ),
           ),
+          const SizedBox(height: 45),
         ],
       ),
     );

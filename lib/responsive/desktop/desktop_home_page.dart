@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:portfolio/responsive/desktop/sections/testimonials/testimonial.dart';
 
 import 'sections/case_studies/case_studies.dart';
 import 'sections/header/header.dart';
@@ -13,6 +14,7 @@ class DesktopHomePage extends StatelessWidget {
         children: const [
           Header(),
           CaseStudies(),
+          Testimonials(),
         ],
       ),
     );
