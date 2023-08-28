@@ -3,8 +3,12 @@ import 'package:flutter_svg/flutter_svg.dart';
 import 'package:google_fonts/google_fonts.dart';
 
 class TestimonialCard extends StatelessWidget {
+  final String image;
+  final String name;
   const TestimonialCard({
     super.key,
+    required this.image,
+    required this.name,
   });
 
   @override
@@ -35,11 +39,9 @@ class TestimonialCard extends StatelessWidget {
                 const SizedBox(height: 30),
                 Row(
                   children: [
-                    const CircleAvatar(
+                    CircleAvatar(
                       radius: 25,
-                      backgroundImage: AssetImage(
-                        "images/dev.JPG",
-                      ),
+                      backgroundImage: AssetImage(image),
                     ),
                     const SizedBox(width: 20),
                     Text(

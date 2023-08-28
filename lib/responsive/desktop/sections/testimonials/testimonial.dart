@@ -40,16 +40,28 @@ class Testimonials extends StatelessWidget {
             const Row(
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children: [
-                TestimonialCard(),
-                TestimonialCard(),
+                TestimonialCard(
+                  image: "images/dev.JPG",
+                  name: "Chinedu Jeremiah",
+                ),
+                TestimonialCard(
+                  image: "images/employee.png",
+                  name: "Mary Jane",
+                ),
               ],
             ),
             const SizedBox(height: 62),
             const Row(
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children: [
-                TestimonialCard(),
-                TestimonialCard(),
+                TestimonialCard(
+                  image: "images/employee.png",
+                  name: "Chinaza Chinedu",
+                ),
+                TestimonialCard(
+                  image: "images/dev.JPG",
+                  name: "Chinedu Jeremiah",
+                ),
               ],
             ),
           ],
