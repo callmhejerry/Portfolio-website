@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 
+import '../../../../../widget/call_to_action_button.dart';
+
 class HeaderMiddle extends StatelessWidget {
   const HeaderMiddle({
     super.key,
@@ -40,44 +42,10 @@ class HeaderMiddle extends StatelessWidget {
               const SizedBox(
                 height: 30,
               ),
-              Container(
+              const CallToActionButton(
                 height: 63,
                 width: 307,
-                decoration: BoxDecoration(
-                  color: const Color(0xff3F8E00),
-                  boxShadow: [
-                    BoxShadow(
-                      blurRadius: 30,
-                      offset: const Offset(0, 8),
-                      color: const Color(0xff3F8E00).withOpacity(50 / 100),
-                    )
-                  ],
-                  border: Border.all(
-                    color: const Color(0xff62BA1B),
-                  ),
-                  borderRadius: BorderRadius.circular(4),
-                ),
-                child: Row(
-                  mainAxisAlignment: MainAxisAlignment.center,
-                  children: [
-                    Text(
-                      "Let's get started",
-                      style: GoogleFonts.ibmPlexMono(
-                        color: Colors.white,
-                        fontSize: 16,
-                        fontWeight: FontWeight.bold,
-                      ),
-                    ),
-                    const SizedBox(
-                      width: 10,
-                    ),
-                    const Icon(
-                      Icons.arrow_forward_ios,
-                      color: Colors.white,
-                      size: 17,
-                    )
-                  ],
-                ),
+                text: "Let's get started",
               )
             ],
           ),
