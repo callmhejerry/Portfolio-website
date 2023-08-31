@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:portfolio/responsive/desktop/sections/footer/footer.dart';
+import 'package:portfolio/responsive/desktop/sections/get_in_touch/get_in_touch.dart';
 import 'package:portfolio/responsive/desktop/sections/testimonials/testimonial.dart';
 
 import 'sections/case_studies/case_studies.dart';
@@ -17,6 +19,8 @@ class DesktopHomePage extends StatelessWidget {
           CaseStudies(),
           Testimonials(),
           RecentWork(),
+          GetInTouch(),
+          Footer(),
         ],
       ),
     );
